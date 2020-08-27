@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logged in page</title>
+    <link rel="stylesheet" href='{% static "index.css" %}'>
+</head>
+<body>
+    <form  >
+    <h1>Welcome {{request.user}} </h1>
+    <p>This is a page u you r finding.</p>
+    <a href="/logout">logout</a>
+</form>
+</body>
+</html>
